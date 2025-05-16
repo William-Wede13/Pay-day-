@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pay Day</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="start-screen">
+    <img src="https://i.postimg.cc/ZRYFcDhW/2-D971-DCF-D57-F-4-F61-A65-B-8-FFB60-CBC410.png" id="start-btn" alt="Start">
+  </div>
+
+  <div id="game-ui" style="display:none;">
+    <div id="top-bar">
+      <span id="coin-count">💰 0</span>
+      <span id="season-label">🌸 Spring - Day 1</span>
+    </div>
+    <button id="shop-btn">🛒</button>
+    <button id="map-btn">🗺️</button>
+    <button id="sell-btn">Sell</button>
+    <button id="save-btn">Save</button>
+    <div id="volume-controls">
+      🔊 <input type="range" min="0" max="100" value="50" id="volume-slider">
+      <button id="mute-btn">🔇</button>
+    </div>
+    <canvas id="game-canvas" width="800" height="600"></canvas>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
