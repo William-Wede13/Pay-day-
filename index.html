@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pay Day Farm Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="topBar">
+    <div id="weather">☀️ Sunny</div>
+    <div id="coins">Coins: 100</div>
+  </div>
+
+  <div id="gameArea">
+    <div id="farmGrid"></div>
+  </div>
+
+  <button id="mapButton">🗺️</button>
+  <button id="shopButton">🛒</button>
+  <button id="settingsButton">⚙️</button>
+
+  <div id="mapMenu" class="popupMenu hidden">
+    <h2>Buy Land</h2>
+    <div id="mapPlots"></div>
+    <button onclick="closeMenu('mapMenu')">Close</button>
+  </div>
+
+  <div id="shopMenu" class="popupMenu hidden">
+    <h2>Shop</h2>
+    <button>Animals</button>
+    <button>Crops</button>
+    <button>Equipment</button>
+    <button onclick="closeMenu('shopMenu')">Close</button>
+  </div>
+
+  <div id="settingsMenu" class="popupMenu hidden">
+    <h2>Settings</h2>
+    <button>Home</button>
+    <button>Reset</button>
+    <button onclick="closeMenu('settingsMenu')">Back</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f0f0f0;
+}
+
+#topBar {
+  background: #a4d4ae;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  font-size: 18px;
+}
+
+#gameArea {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+#farmGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-gap: 10px;
+}
+
+.plot {
+  width: 100px;
+  height: 100px;
+  background: #fff;
+  border: 2px solid #ccc;
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  position: absolute;
+  padding: 10px;
+  font-size: 20px;
+  z-index: 10;
+}
+
+#mapButton { bottom: 10px; right: 10px; }
+#shopButton { top: 100px; left: 10px; }
+#settingsButton { bottom: 10px; left: 10px; }
+
+.popupMenu {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  padding: 20px;
+  border: 2px solid #888;
+  z-index: 100;
+}
+
+.hidden {
+  display: none;
+}
