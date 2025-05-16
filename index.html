@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pay Day Farm</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="startScreen">
+    <h1>🌾 Pay Day</h1>
+    <button onclick="startGame()">Play</button>
+  </div>
+
+  <div id="gameUI" style="display:none;">
+    <div id="topBar">
+      <span id="coinCount">💰 100</span>
+      <span id="weather">☀️ Sunny</span>
+      <span id="season">Spring</span>
+    </div>
+    <div id="mainGrid">
+      <!-- Top two are animal plots -->
+      <div class="plot animal" data-unlocked="true"></div>
+      <div class="plot animal" data-unlocked="true"></div>
+      <!-- Four farm plots -->
+      <div class="plot farm" data-unlocked="true" onclick="plantCrop(this)"></div>
+      <div class="plot farm" data-unlocked="false"><span class="lock">🔒</span></div>
+      <div class="plot farm" data-unlocked="false"><span class="lock">🔒</span></div>
+      <div class="plot farm" data-unlocked="false"><span class="lock">🔒</span></div>
+    </div>
+
+    <button id="shopBtn" onclick="toggleShop()">🛒</button>
+    <button id="mapBtn" onclick="toggleMap()">🗺️</button>
+    <button id="settingsBtn" onclick="toggleSettings()">⚙️</button>
+
+    <div id="shopMenu" class="menu" style="display:none;">
+      <h2>Shop</h2>
+      <button onclick="buyItem('wheat')">🌾 Wheat - 5</button>
+      <button onclick="buyItem('carrot')">🥕 Carrot - 8</button>
+      <button onclick="buyItem('land')">🌱 Farmland Expansion - 50</button>
+    </div>
+
+    <div id="mapMenu" class="menu" style="display:none;">
+      <h2>Buy Land</h2>
+      <div id="mapPlots">
+        <div class="mapPlot" onclick="buyPlot(this)" data-cost="100" data-farm="2" data-animal="1">Plot A - 💰100<br>🧑‍🌾 2 Farmland, 🐄 1 Animal</div>
+        <div class="mapPlot" onclick="buyPlot(this)" data-cost="200" data-farm="3" data-animal="2">Plot B - 💰200<br>🧑‍🌾 3 Farmland, 🐄 2 Animal</div>
+        <div class="mapPlot" onclick="buyPlot(this)" data-cost="350" data-farm="5" data-animal="3">Plot C - 💰350<br>🧑‍🌾 5 Farmland, 🐄 3 Animal</div>
+      </div>
+    </div>
+
+    <div id="settingsMenu" class="menu" style="display:none;">
+      <h2>Settings</h2>
+      <button onclick="saveGame()">Save</button>
+      <button onclick="resetGame()">Reset</button>
+      <button onclick="toggleSettings()">Back</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
