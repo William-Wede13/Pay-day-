@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Sunny Patch",
+    "price": 100,
+    "farmland": 2,
+    "animalland": 0
+  },
+  {
+    "name": "Meadow Bend",
+    "price": 250,
+    "farmland": 3,
+    "animalland": 1
+  },
+  {
+    "name": "Clover Ridge",
+    "price": 500,
+    "farmland": 4,
+    "animalland": 2
+  },
+  {
+    "name": "Barnhill Plains",
+    "price": 750,
+    "farmland": 5,
+    "animalland": 3
+  },
+  {
+    "name": "Riverfork Acres",
+    "price": 1000,
+    "farmland": 6,
+    "animalland": 4
+  },
+  {
+    "name": "Golden Valley",
+    "price": 1500,
+    "farmland": 8,
+    "animalland": 6
+  },
+  {
+    "name": "Emerald Prairie",
+    "price": 2000,
+    "farmland": 10,
+    "animalland": 8
+  }
+]
