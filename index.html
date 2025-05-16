@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pay Day Farm Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="startScreen">
+        <img src="https://i.postimg.cc/ZRYFcDhW/2-D971-DCF-D57-F-4-F61-A65-B-8-FFB60-CBC410.png" id="startImage" alt="Start Game">
+    </div>
+
+    <div id="gameUI" style="display:none;">
+        <div id="topPanel">
+            <div id="weather">☀️ Sunny</div>
+            <div id="cropStats">Wheat: 🌾 x2</div>
+            <div id="coins">💰 100</div>
+        </div>
+
+        <div id="gameGrid">
+            <!-- Top two animal pens -->
+            <div class="plot pen locked">🔒</div>
+            <div class="plot pen locked">🔒</div>
+            <!-- Farmland -->
+            <div class="plot crop">🌾</div>
+            <div class="plot locked">🔒</div>
+            <div class="plot locked">🔒</div>
+            <div class="plot locked">🔒</div>
+        </div>
+
+        <button id="mapButton">🗺️</button>
+        <button id="shopButton">🛒</button>
+        <button id="settingsButton">⚙️</button>
+
+        <!-- Shop Menu -->
+        <div id="shopMenu" class="sideMenu">
+            <button>Animals</button>
+            <button>Crops</button>
+            <button>Equipment</button>
+        </div>
+
+        <!-- Settings Menu -->
+        <div id="settingsMenu" class="sideMenu right">
+            <button>Home</button>
+            <button>Reset</button>
+            <button>Back</button>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
